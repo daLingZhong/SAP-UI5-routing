@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.tnt" xmlns:m="sap.m" controllerName="test1.controller.View1" height="100%" class="side-navigation-demo">
+	
+    <m:Button text="{i18n>title}" icon="sap-icon://menu2" press="onCollapseExapandPress"/>
+    <SideNavigation id="sideNavigation"> 
+        <item>
+            <NavigationList itemSelect="onListPress">
+                <NavigationListItem text="{i18n>employees}" icon="sap-icon://employee">
+                    <NavigationListItem text="行政" > 
+                    </NavigationListItem>
+                    <NavigationListItem text="财务"> 
+                    </NavigationListItem>
+                    <NavigationListItem text="人力"> 
+                    </NavigationListItem>
+                    <NavigationListItem text="领导"> 
+                    </NavigationListItem>
+                </NavigationListItem>
+                <NavigationListItem text="Item 2" icon="sap-icon://building">
+                    <NavigationListItem text="Sub Item 1"> 
+                    </NavigationListItem>
+                    <NavigationListItem text="Sub Item 2"> 
+                    </NavigationListItem>
+                    <NavigationListItem text="Sub Item 3"> 
+                    </NavigationListItem>
+                    <NavigationListItem text="Sub Item 4"> 
+                    </NavigationListItem>
+                </NavigationListItem>
+            </NavigationList>
+        </item>
+        <fixedItem>
+            <NavigationList>
+                <NavigationListItem text="Item 1" icon="sap-icon://employee"/>  
+                <NavigationListItem text="Item 2" icon="sap-icon://building"/>  
+                <NavigationListItem text="Item 3" icon="sap-icon://card"/>  
+            </NavigationList>
+        </fixedItem>
+    </SideNavigation>
+</mvc:View>
