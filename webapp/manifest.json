@@ -68,7 +68,7 @@
             "target": "view1"
         },
         {
-        	"pattern":"page",
+        	"pattern":"page/{employeePath}",
         	"name": "Page",
         	"target": "page"
         }

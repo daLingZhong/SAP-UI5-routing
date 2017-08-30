@@ -4,14 +4,8 @@
     <SideNavigation id="sideNavigation"> 
         <item>
             <NavigationList itemSelect="onListPress">
-                <NavigationListItem text="{i18n>employees}" icon="sap-icon://employee">
-                    <NavigationListItem text="行政" > 
-                    </NavigationListItem>
-                    <NavigationListItem text="财务"> 
-                    </NavigationListItem>
-                    <NavigationListItem text="人力"> 
-                    </NavigationListItem>
-                    <NavigationListItem text="领导"> 
+                <NavigationListItem text="{i18n>employees}" items="{/Employees}" icon="sap-icon://employee">
+                    <NavigationListItem text="{name}"> 
                     </NavigationListItem>
                 </NavigationListItem>
                 <NavigationListItem text="Item 2" icon="sap-icon://building">

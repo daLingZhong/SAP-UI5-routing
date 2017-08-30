@@ -9,7 +9,8 @@ sap.ui.define([
 	Controller.extend("test1.controller.Page", {
  
 		onInit: function () {
-
+				var oRouter = UIComponent.getRouterFor(this);
+				oRouter.getRoute("Page").attachPatternMatched(this._onObjectMatched, this);	
 		},
 		
 		onNavPress: function() {
@@ -22,6 +23,10 @@ sap.ui.define([
 				var oRouter = UIComponent.getRouterFor(this);
 				oRouter.navTo("View1",{}, true);
 			}
+		},
+		_onObjectMatched: function (event) {			
+			var sPath = event.getParameter("arguments").employeePath;
+			this.getView().bindElement({path: decodeURIComponent(sPath)});
 		}
 		
 	});

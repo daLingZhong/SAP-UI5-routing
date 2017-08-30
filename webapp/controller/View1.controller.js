@@ -20,11 +20,15 @@ sap.ui.define([
  
 			sideNavigation.setExpanded(expanded);
 		},
-        onListPress: function() {
-        	
+        onListPress: function(event) {
         	var oRouter = UIComponent.getRouterFor(this);
-        	MessageToast.show(oRouter+" Pressed"); //方法被触发了
-            oRouter.navTo("Page",{},true);
+        	var oItem = event.getSource();
+        	MessageToast.show(oItem+" Pressed"); //方法被触发了
+        	// var sPath = oItem.getBindingContext().getPath();
+        	
+            oRouter.navTo("Page",{
+            	employeePath: encodeURIComponent(oItem)
+            },true);
         }
 		
 	});

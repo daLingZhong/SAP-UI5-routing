@@ -1,0 +1,20 @@
+[{
+	"Id": "1",
+	"name": "前端工程师",
+	"field2": 3097.2,
+	"field3": "field3 1",
+	"__metadata": {
+		"uri": "Employees('1')",
+		"type": "Demo.Employees"
+	}
+},
+{
+	"Id": "2",
+	"name": "后端工程师",
+	"field2": 3097.2,
+	"field3": "field3 1",
+	"__metadata": {
+		"uri": "Employees('2')",
+		"type": "Demo.Employees"
+	}
+}]

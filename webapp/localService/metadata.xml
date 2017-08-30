@@ -11,12 +11,12 @@
 				<Property Name="field1" Nullable="false" Type="Edm.String"/>
 				<Property Name="field2" Nullable="false" Type="Edm.String"/>
 			</EntityType>
-			<EntityType Name="Entity2">
+			<EntityType Name="Employees">
 				<Key>
 					<PropertyRef Name="Id"/>
 				</Key>
 				<Property Name="Id" Nullable="false" Type="Edm.String"/>
-				<Property Name="field1" Nullable="false" Type="Edm.String"/>
+				<Property Name="name" Nullable="false" Type="Edm.String"/>
 				<Property Name="field2" Nullable="false" Type="Edm.Decimal"/>
 				<Property Name="field3" Nullable="false" Type="Edm.String"/>
 			</EntityType>
@@ -30,7 +30,7 @@
 			</EntityType>
 			<EntityContainer Name="DemoSetContainer" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
 				<EntitySet EntityType="Demo.Entity1" Name="Entity1_Set"/>
-				<EntitySet EntityType="Demo.Entity2" Name="Entity2_Set"/>
+				<EntitySet EntityType="Demo.Employees" Name="Employees"/>
 				<EntitySet EntityType="Demo.Entity3" Name="Entity3_Set"/>
 			</EntityContainer>
 		</Schema>
